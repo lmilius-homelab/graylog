@@ -3,5 +3,5 @@ FROM graylog/graylog:3.1
 USER root
 RUN mkdir -pv /etc/graylog/server/
 COPY ./getGeo.sh /etc/graylog/server/
-RUN chmod +x /etc/graylog/server/getGeo.sh && /etc/graylog/server/getGeo.sh
+#RUN chmod +x /etc/graylog/server/getGeo.sh && /etc/graylog/server/getGeo.sh
 USER graylog
